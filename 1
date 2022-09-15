@@ -1,0 +1,17 @@
+using System;
+namespace Rubles
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите число ");
+            int digit = int.Parse(Console.ReadLine());
+            if (digit % 4 == 0 && digit % 7 != 0)
+                Console.WriteLine($"{digit} кратно 4 и не кратно 7");
+            else
+                Console.WriteLine("Ну в другой раз :P");
+            Console.Read();
+        }
+    }
+}
