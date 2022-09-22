@@ -5,12 +5,20 @@ namespace Rubles
     {
         static void Main(string[] args)
         {
+            int digit;
+            
             Console.Write("Введите число ");
-            int digit = int.Parse(Console.ReadLine());
+            digit = int.Parse(Console.ReadLine());
+
             if (digit % 4 == 0 && digit % 7 != 0)
+            {
                 Console.WriteLine("ok");
+            }
             else
+            {
                 Console.WriteLine("Ну в другой раз :P");
+            }
+
             Console.Read();
         }
     }
